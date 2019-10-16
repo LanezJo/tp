@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %} {% block title %} Accueil {% endblock %} {% block header %}
+
+<h2>Voici le header</h2>
+
+{% endblock %} {% block body %}
+<div class="container">
+    <div class="jumbotron mt-3">
+        <h1 class="display-5">LANEZSHOP</h1>
+        <p class="lead">CONSULTER VOS ARTICLES</p>
+        <hr class="my-4">
+       
+        <p class="lead">
+            <a class="btn btn-warning btn-lg" href="{{ path('ads_index') }}" role="button" target="_blank">AFFICHER LES ARTICLES </a>
+        </p>
+    </div>
+
+    
+
+</div>
+{% endblock %}

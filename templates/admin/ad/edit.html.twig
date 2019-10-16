@@ -1,0 +1,25 @@
+{% extends "admin/base.html.twig" %}
+
+{% block title %}MODIFICATION D'UNE ANNONCE{% endblock %}
+
+
+
+{% block body %}
+    <div class="container">
+        <h1>MODIFIER L'ANNONCE : {{ ad.title }}</h1>
+
+        {{ form_start(form) }}
+           
+
+        {{ form_widget(form)}}
+           
+        <button type="submit" class="btn btn-primary">MODIFIER</button>
+        <a class="btn btn-danger" href="{{ path('admin_ads_index') }}" role="button"> ANNULER </a>
+        
+        {{ form_end(form) }}
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+    <script src="/js/ad.js"></script>
+{% endblock %}
